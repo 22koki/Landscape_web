@@ -18,7 +18,7 @@ h3 {
     gap: 20px;
     justify-items: center;
     padding: 20px;
-    background-color: #1c1d1c; /* Grey background color */
+    background-color: grey; /* Grey background color */
 }
 
 .image {
