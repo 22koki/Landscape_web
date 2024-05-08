@@ -10,7 +10,7 @@ body {
     background-color: #f4f4f4; /* Set a light background color */
 }
 
-.header {
+header {
     background-color: #333;
     color: #fff;
 }
@@ -19,7 +19,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 3px;
 }
 
 .logo img {

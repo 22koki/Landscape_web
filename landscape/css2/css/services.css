@@ -13,7 +13,7 @@ body {
 /* Navbar styling */
 .navbar {
     background-color: #28a745; /* Set the background color to green */
-    padding: 15px; /* Add padding for better visual appeal */
+    padding: 0.7px; /* Add padding for better visual appeal */
 }
 
 .navbar-brand {
@@ -105,6 +105,7 @@ body {
     margin-top: 10px;
     font-size: 16px;
 }
+
 /* Add this CSS code at the end of your existing CSS file */
 .go-back-button {
     position: fixed;
