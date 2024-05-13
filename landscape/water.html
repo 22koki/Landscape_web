@@ -3,84 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Water Feauters Gallery</title>
+    <title>Water Features Gallery</title>
     <link rel="stylesheet" href="css/water.css"> <!-- Link to your CSS file -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
-
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 </head>
 <body>
-    <h3>Fencing Gallery</h3>
+    <h3>Water Features Gallery</h3>
     <div class="image-gallery">
         <div class="image">
-            <a href="water-image1.jpg" class="lightbox-trigger">
+            <a href="gallerys/image212.jpg" class="lightbox-trigger">
                 <img src="gallerys/image212.jpg" alt="Image 1">
             </a>
             <p>Beautifully designed fencing that adds elegance to the property.</p>
         </div>
+       
         <div class="image">
-            <a href="water-image2.jpg" class="lightbox-trigger">
-                <img src="gallerys/image213.jpg" alt="Image 2">
+            <a href="imgs/water4.jpeg" class="lightbox-trigger">
+                <img src="imgs/water4.jpeg" alt="Image 2">
             </a>
             <p>Secure and stylish fencing solutions for your outdoor space.</p>
         </div>
         <div class="image">
-            <a href="water-image3.jpg" class="lightbox-trigger">
-                <img src="gallerys/image209.jpg" alt="Image 3">
+            <a href="imgs/water3.jpeg" class="lightbox-trigger">
+                <img src="imgs/water3.jpeg" alt="Image 2">
             </a>
-            <p>Another image description for the third image.</p>
+            <p>Secure and stylish fencing solutions for your outdoor space.</p>
         </div>
         <div class="image">
-            <a href="water-image4.jpg" class="lightbox-trigger">
-                <img src="imgs/water.jpeg" alt="Image 4">
+            <a href="imgs/water2.jpeg" class="lightbox-trigger">
+                <img src="imgs/water2.jpeg" alt="Image 2">
             </a>
-            <p>Another image description for the fourth image.</p>
+            <p>Secure and stylish fencing solutions for your outdoor space.</p>
         </div>
         <div class="image">
-            <a href="water-image5.jpg" class="lightbox-trigger">
-                <img src="imgs/water1.jpeg" alt="Image 5">
+            <a href="imgs/water1.jpeg" class="lightbox-trigger">
+                <img src="imgs/water1.jpeg" alt="Image 2">
             </a>
-            <p>Another image description for the fifth image.</p>
+            <p>Secure and stylish fencing solutions for your outdoor space.</p>
+        </div> <div class="image">
+            <a href="imgs/water.jpeg" class="lightbox-trigger">
+                <img src="imgs/water.jpeg" alt="Image 2">
+            </a>
+            <p>Secure and stylish fencing solutions for your outdoor space.</p>
         </div>
         <div class="image">
-            <a href="water-image6.jpg" class="lightbox-trigger">
-                <img src="imgs/water2.jpeg" alt="Image 6">
+            <a href="gallerys/image213.jpg" class="lightbox-trigger">
+                <img src="/landscape/gallerys/image213.jpg" alt="Image 2">
             </a>
-            <p>Another image description for the sixth image.</p>
+            <p>Secure and stylish fencing solutions for your outdoor space.</p>
         </div>
         <div class="image">
-            <a href="water-image7.jpg" class="lightbox-trigger">
-                <img src="imgs/water3.jpeg" alt="Image 7">
+            <a href="imgs/water5.jpeg" class="lightbox-trigger">
+                <img src="imgs/water5.jpeg" alt="Image 2">
             </a>
-            <p>Another image description for the seventh image.</p>
+            <p>Secure and stylish fencing solutions for your outdoor space.</p>
         </div>
-        <div class="image">
-            <a href="water-image7.jpg" class="lightbox-trigger">
-                <img src="imgs/water4.jpeg" alt="Image 7">
-            </a>
-            <p>Another image description for the seventh image.</p>
-        </div>
-        <div class="image">
-            <a href="water-image7.jpg" class="lightbox-trigger">
-                <img src="imgs/water5.jpeg" alt="Image 7">
-            </a>
-            <p>Another image description for the seventh image.</p>
-        </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
-        <script>
-            $(document).ready(function() {
-                // Initialize lightbox on all elements with the lightbox-trigger class
-                $('.lightbox-trigger').on('click', function(event) {
-                    event.preventDefault(); // Prevent default link behavior
-                    $(this).lightBox(); // Initialize lightbox on clicked element
-                });
+        <!-- Add more image elements here -->
+    </div>
+    
+    <script>
+        $(document).ready(function() {
+            // Initialize Magnific Popup on all elements with the lightbox-trigger class
+            $('.lightbox-trigger').magnificPopup({
+                type: 'image',
+                gallery: {
+                    enabled: true
+                }
             });
-        </script>
-        
+        });
+    </script>
 </body>
 </html>
