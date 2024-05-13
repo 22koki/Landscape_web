@@ -5,83 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Water Feauters Gallery</title>
     <link rel="stylesheet" href="css/water.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+    
 </head>
 <body>
     <h3>Fencing Gallery</h3>
     <div class="image-gallery">
         <div class="image">
-            <a href="water-image1.jpg" target="_blank">
-                <img src="gallerys/image14.jpg" alt="Image 1">
+            <a href="water-image1.jpg" class="lightbox-trigger">
+                <img src="gallerys/image212.jpg" alt="Image 1">
             </a>
             <p>Beautifully designed fencing that adds elegance to the property.</p>
         </div>
         <div class="image">
-            <a href="fencing-image2.jpg" target="_blank">
-                <img src="gallerys/image51.jpg" alt="Image 2">
+            <a href="water-image2.jpg" class="lightbox-trigger">
+                <img src="gallerys/image213.jpg" alt="Image 2">
             </a>
             <p>Secure and stylish fencing solutions for your outdoor space.</p>
         </div>
         <div class="image">
-            <a href="fencing-image3.jpg" target="_blank">
-                <img src="gallerys/image49.jpg" alt="Image 3">
+            <a href="water-image3.jpg" class="lightbox-trigger">
+                <img src="gallerys/image209.jpg" alt="Image 3">
             </a>
             <p>Another image description for the third image.</p>
         </div>
         <div class="image">
-            <a href="fencing-image4.jpg" target="_blank">
-                <img src="imgs/download (10).jpeg" alt="Image 4">
+            <a href="water-image4.jpg" class="lightbox-trigger">
+                <img src="imgs/water.jpeg" alt="Image 4">
             </a>
             <p>Another image description for the fourth image.</p>
         </div>
         <div class="image">
-            <a href="fencing-image5.jpg" target="_blank">
-                <img src="imgs/download (11).jpeg" alt="Image 5">
+            <a href="water-image5.jpg" class="lightbox-trigger">
+                <img src="imgs/water1.jpeg" alt="Image 5">
             </a>
             <p>Another image description for the fifth image.</p>
         </div>
         <div class="image">
-            <a href="fencing-image6.jpg" target="_blank">
-                <img src="imgs/download (12).jpeg" alt="Image 6">
+            <a href="water-image6.jpg" class="lightbox-trigger">
+                <img src="imgs/water2.jpeg" alt="Image 6">
             </a>
             <p>Another image description for the sixth image.</p>
         </div>
         <div class="image">
-            <a href="fencing-image7.jpg" target="_blank">
-                <img src="imgs/download (9).jpeg" alt="Image 7">
+            <a href="water-image7.jpg" class="lightbox-trigger">
+                <img src="imgs/water3.jpeg" alt="Image 7">
             </a>
             <p>Another image description for the seventh image.</p>
         </div>
         <div class="image">
-            <a href="fencing-image7.jpg" target="_blank">
-                <img src="imgs/images (6).jpeg" alt="Image 7">
+            <a href="water-image7.jpg" class="lightbox-trigger">
+                <img src="imgs/water4.jpeg" alt="Image 7">
             </a>
             <p>Another image description for the seventh image.</p>
         </div>
         <div class="image">
-            <a href="fencing-image7.jpg" target="_blank">
-                <img src="imgs/images (4).jpeg" alt="Image 7">
+            <a href="water-image7.jpg" class="lightbox-trigger">
+                <img src="imgs/water5.jpeg" alt="Image 7">
             </a>
             <p>Another image description for the seventh image.</p>
         </div>
-        <div class="image">
-            <a href="fencing-image8.jpg" target="_blank">
-                <img src="imgs/images (2).jpeg" alt="Image 8">
-            </a>
-            <p>Another image description for the eighth image.</p>
-        </div>
-        <div class="image">
-            <a href="fencing-image9.jpg" target="_blank">
-                <img src="imgs/images (3).jpeg" alt="Image 9">
-            </a>
-            <p>Another image description for the ninth image.</p>
-        </div>
-        <div class="image">
-            <a href="fencing-image9.jpg" target="_blank">
-                <img src="imgs/images (5).jpeg" alt="Image 9">
-            </a>
-            <p>Another image description for the ninth image.</p>
-        </div>
-        <!-- Add more images for the fencing gallery as needed -->
-    </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                // Initialize lightbox on all elements with the lightbox-trigger class
+                $('.lightbox-trigger').on('click', function(event) {
+                    event.preventDefault(); // Prevent default link behavior
+                    $(this).lightBox(); // Initialize lightbox on clicked element
+                });
+            });
+        </script>
+        
 </body>
 </html>
