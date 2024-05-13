@@ -5,77 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Garden Maintenance Gallery</title>
     <link rel="stylesheet" href="css2/css/gardenm.css"> <!-- Link to your CSS file -->
+    <!-- Magnific Popup CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
 </head>
 <body>
     <h3>Garden Maintenance Gallery</h3>
     <div class="image-gallery">
         <div class="image">
-            <a href="garden-maintenance-image1.jpg" target="_blank">
+            <a href="gallerys/image45.jpg" class="image-popup">
                 <img src="gallerys/image45.jpg" alt="Image 1">
             </a>
             <p>Beautifully maintained garden with colorful flowers.</p>
         </div>
         <div class="image">
-            <a href="garden-maintenance-image2.jpg" target="_blank">
+            <a href="gallerys/image44.jpg" class="image-popup">
                 <img src="gallerys/image44.jpg" alt="Image 2">
             </a>
             <p>Pruned trees and lush greenery in a well-kept garden.</p>
         </div>
         <div class="image">
-            <a href="garden-maintenance-image3.jpg" target="_blank">
+            <a href="gallerys/image13.jpg" class="image-popup">
                 <img src="gallerys/image13.jpg" alt="Image 3">
             </a>
             <p>Another image description for the third image.</p>
         </div>
         <div class="image">
-            <a href="garden-maintenance-image3.jpg" target="_blank">
-                <img src="gallerys/image2.jpg" alt="Image 3">
+            <a href="gallerys/image2.jpg" class="image-popup">
+                <img src="gallerys/image2.jpg" alt="Image 4">
             </a>
-            <p>Another image description for the third image.</p>
+            <p>Another image description for the fourth image.</p>
         </div>
         <div class="image">
-            <a href="garden-maintenance-image3.jpg" target="_blank">
-                <img src="gallerys/image104.jpg" alt="Image 3">
+            <a href="gallerys/image104.jpg" class="image-popup">
+                <img src="gallerys/image104.jpg" alt="Image 5">
             </a>
-            <p>Another image description for the third image.</p>
+            <p>Another image description for the fifth image.</p>
         </div>
         <div class="image">
-            <a href="garden-maintenance-image3.jpg" target="_blank">
-                <img src="gallerys/image21.jpg" alt="Image 3">
+            <a href="gallerys/image21.jpg" class="image-popup">
+                <img src="gallerys/image21.jpg" alt="Image 6">
             </a>
-            <p>Another image description for the third image.</p>
+            <p>Another image description for the sixth image.</p>
         </div>
         <div class="image">
-            <a href="garden-maintenance-image3.jpg" target="_blank">
-                <img src="gallerys/image25.jpg" alt="Image 3">
+            <a href="gallerys/image25.jpg" class="image-popup">
+                <img src="gallerys/image25.jpg" alt="Image 7">
             </a>
-            <p>Another image description for the third image.</p>
+            <p>Another image description for the seventh image.</p>
         </div>
         <div class="image">
-            <a href="garden-maintenance-image3.jpg" target="_blank">
-                <img src="gallerys/image42.jpg" alt="Image 3">
+            <a href="gallerys/image42.jpg" class="image-popup">
+                <img src="gallerys/image42.jpg" alt="Image 8">
             </a>
-            <p>Another image description for the third image.</p>
+            <p>Another image description for the eighth image.</p>
         </div>
         <div class="image">
-            <a href="garden-maintenance-image3.jpg" target="_blank">
-                <img src="gallerys/image30.jpg" alt="Image 3">
+            <a href="gallerys/image30.jpg" class="image-popup">
+                <img src="gallerys/image30.jpg" alt="Image 9">
             </a>
-            <p>Another image description for the third image.</p>
+            <p>Another image description for the ninth image.</p>
         </div>
         <div class="image">
-            <a href="garden-maintenance-image3.jpg" target="_blank">
-                <img src="gallerys/resized_image125.jpg" alt="Image 3">
+            <a href="gallerys/resized_image125.jpg" class="image-popup">
+                <img src="gallerys/resized_image125.jpg" alt="Image 10">
             </a>
-            <p>Another image description for the third image.</p>
+            <p>Another image description for the tenth image.</p>
         </div>
         <div class="image">
-            <a href="garden-maintenance-image3.jpg" target="_blank">
-                <img src="gallerys/resized_image107.jpg" alt="Image 3">
+            <a href="gallerys/resized_image107.jpg" class="image-popup">
+                <img src="gallerys/resized_image107.jpg" alt="Image 11">
             </a>
-            <p>Another image description for the third image.</p>
+            <p>Another image description for the eleventh image.</p>
         </div>
-        <!-- Add more images for the garden maintenance gallery as needed -->
     </div>
+
+    <!-- Magnific Popup JS and Initialization Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.image-popup').magnificPopup({
+                type: 'image',
+                gallery:{
+                    enabled:true
+                }
+            });
+        });
+    </script>
 </body>
 </html>
