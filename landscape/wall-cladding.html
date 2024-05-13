@@ -5,65 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wall Cladding Gallery</title>
     <link rel="stylesheet" href="css2/css/wallc.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
 </head>
 <body>
     <h3>Wall Cladding Gallery</h3>
     <div class="image-gallery">
         <div class="image">
-            <a href="wall-cladding-image1.jpg" target="_blank">
+            <a href="gallerys/resized_image199.jpg" class="image-popup">
                 <img src="gallerys/resized_image199.jpg" alt="Image 1">
             </a>
             <p>Wall cladding with a modern and stylish design.</p>
         </div>
         <div class="image">
-            <a href="wall-cladding-image2.jpg" target="_blank">
+            <a href="gallerys/resized_image74.jpg" class="image-popup">
                 <img src="gallerys/resized_image74.jpg" alt="Image 2">
             </a>
             <p>Exterior wall cladding installation in progress.</p>
         </div>
         <div class="image">
-            <a href="wall-cladding-image3.jpg" target="_blank">
+            <a href="imgs/W3.jpeg" class="image-popup">
                 <img src="imgs/W3.jpeg" alt="Image 3">
             </a>
             <p>Another image description for the third image.</p>
         </div>
         <div class="image">
-            <a href="wall-cladding-image1.jpg" target="_blank">
+            <a href="imgs/W4.jpeg" class="image-popup">
                 <img src="imgs/W4.jpeg" alt="Image 1">
             </a>
             <p>Wall cladding with a modern and stylish design.</p>
         </div>
         <div class="image">
-            <a href="wall-cladding-image1.jpg" target="_blank">
+            <a href="imgs/W5.jpeg" class="image-popup">
                 <img src="imgs/W5.jpeg" alt="Image 1">
             </a>
             <p>Wall cladding with a modern and stylish design.</p>
         </div>
         <div class="image">
-            <a href="wall-cladding-image1.jpg" target="_blank">
+            <a href="imgs/W6.jpeg" class="image-popup">
                 <img src="imgs/W6.jpeg" alt="Image 1">
             </a>
             <p>Wall cladding with a modern and stylish design.</p>
         </div>
         <div class="image">
-            <a href="wall-cladding-image1.jpg" target="_blank">
+            <a href="gallerys/image75.jpg" class="image-popup">
                 <img src="gallerys/image75.jpg" alt="Image 1">
             </a>
             <p>Wall cladding with a modern and stylish design.</p>
         </div>
         <div class="image">
-            <a href="wall-cladding-image1.jpg" target="_blank">
+            <a href="gallerys/image146.jpg" class="image-popup">
                 <img src="gallerys/image146.jpg" alt="Image 1">
             </a>
             <p>Wall cladding with a modern and stylish design.</p>
         </div>
         <div class="image">
-            <a href="wall-cladding-image1.jpg" target="_blank">
+            <a href="imgs/W9.jpeg" class="image-popup">
                 <img src="imgs/W9.jpeg" alt="Image 1">
             </a>
             <p>Wall cladding with a modern and stylish design.</p>
         </div>
-        <!-- Add more images for the wall cladding gallery as needed -->
     </div>
+
+    <!-- Magnific Popup Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.image-popup').magnificPopup({
+                type: 'image',
+                gallery:{
+                    enabled:true
+                }
+            });
+        });
+    </script>
 </body>
 </html>
