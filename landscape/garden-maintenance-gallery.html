@@ -2,95 +2,197 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Garden Maintenance Gallery</title>
-    <link rel="stylesheet" href="css2/css/gardenm.css"> <!-- Link to your CSS file -->
-    <!-- Magnific Popup CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="css2/css/gardenm.css">
 </head>
 <body>
-    <h3>Garden Maintenance Gallery</h3>
-    <div class="image-gallery">
-        <div class="image">
-            <a href="gallerys/image45.jpg" class="image-popup">
-                <img src="gallerys/image45.jpg" alt="Image 1">
-            </a>
-            <p>Beautifully maintained garden with colorful flowers.</p>
+
+<section class="gallery-section">
+
+    <h2 class="gallery-title">Garden Maintenance Gallery</h2>
+
+    <!-- ================= HERO CAROUSEL ================= -->
+    <div class="swiper gardenSwiper">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <img src="gallerys/image45.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="gallerys/image44.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="gallerys/image13.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="gallerys/image30.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="gallerys/image104.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="gallerys/resized_image125.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="gallerys/image25.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="gallerys/image2.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="gallerys/image21.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="gallerys/resized_image107.jpg" alt="">
+            </div>
+
         </div>
-        <div class="image">
-            <a href="gallerys/image44.jpg" class="image-popup">
-                <img src="gallerys/image44.jpg" alt="Image 2">
-            </a>
-            <p>Pruned trees and lush greenery in a well-kept garden.</p>
-        </div>
-        <div class="image">
-            <a href="gallerys/image13.jpg" class="image-popup">
-                <img src="gallerys/image13.jpg" alt="Image 3">
-            </a>
-            <p>Another image description for the third image.</p>
-        </div>
-        <div class="image">
-            <a href="gallerys/image2.jpg" class="image-popup">
-                <img src="gallerys/image2.jpg" alt="Image 4">
-            </a>
-            <p>Another image description for the fourth image.</p>
-        </div>
-        <div class="image">
-            <a href="gallerys/image104.jpg" class="image-popup">
-                <img src="gallerys/image104.jpg" alt="Image 5">
-            </a>
-            <p>Another image description for the fifth image.</p>
-        </div>
-        <div class="image">
-            <a href="gallerys/image21.jpg" class="image-popup">
-                <img src="gallerys/image21.jpg" alt="Image 6">
-            </a>
-            <p>Another image description for the sixth image.</p>
-        </div>
-        <div class="image">
-            <a href="gallerys/image25.jpg" class="image-popup">
-                <img src="gallerys/image25.jpg" alt="Image 7">
-            </a>
-            <p>Another image description for the seventh image.</p>
-        </div>
-        <div class="image">
-            <a href="gallerys/image42.jpg" class="image-popup">
-                <img src="gallerys/image42.jpg" alt="Image 8">
-            </a>
-            <p>Another image description for the eighth image.</p>
-        </div>
-        <div class="image">
-            <a href="gallerys/image30.jpg" class="image-popup">
-                <img src="gallerys/image30.jpg" alt="Image 9">
-            </a>
-            <p>Another image description for the ninth image.</p>
-        </div>
-        <div class="image">
-            <a href="gallerys/resized_image125.jpg" class="image-popup">
-                <img src="gallerys/resized_image125.jpg" alt="Image 10">
-            </a>
-            <p>Another image description for the tenth image.</p>
-        </div>
-        <div class="image">
-            <a href="gallerys/resized_image107.jpg" class="image-popup">
-                <img src="gallerys/resized_image107.jpg" alt="Image 11">
-            </a>
-            <p>Another image description for the eleventh image.</p>
+
+        <!-- Navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+
+    <!-- ================= FEATURED GRID ================= -->
+    <div class="featured-section fade-in">
+        <h3>Our Recent Work</h3>
+
+        <div class="featured-grid">
+            <div class="featured-item">
+                <img src="gallerys/image45.jpg" alt="">
+            </div>
+            <div class="featured-item">
+                <img src="gallerys/image30.jpg" alt="">
+            </div>
+            <div class="featured-item">
+                <img src="gallerys/image104.jpg" alt="">
+            </div>
+            <div class="featured-item">
+                <img src="gallerys/image25.jpg" alt="">
+            </div>
         </div>
     </div>
 
-    <!-- Magnific Popup JS and Initialization Script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('.image-popup').magnificPopup({
-                type: 'image',
-                gallery:{
-                    enabled:true
-                }
-            });
+
+    <!-- ================= BEFORE & AFTER ================= -->
+    <div class="before-after fade-in">
+        <h3>Before & After Transformation</h3>
+
+        <div class="compare-container">
+            <img src="gallerys/image13.jpg" class="before-img">
+            <div class="after-wrapper">
+                <img src="gallerys/image30.jpg" class="after-img">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ================= TESTIMONIALS ================= -->
+    <div class="testimonial-section fade-in">
+        <h3>What Our Clients Say</h3>
+
+        <div class="testimonial">
+            <p>"Absolutely transformed our compound into a paradise. Professional and reliable!"</p>
+            <span>- Happy Client</span>
+        </div>
+
+        <div class="testimonial">
+            <p>"The lawn has never looked better. Highly recommend their maintenance service."</p>
+            <span>- Property Owner</span>
+        </div>
+    </div>
+
+
+    <!-- ================= CALL TO ACTION ================= -->
+    <div class="cta-section fade-in">
+        <h3>Ready to Transform Your Garden?</h3>
+        <p>Let us bring your outdoor space to life with expert care and creativity.</p>
+        <a href="#" class="cta-btn">Book Maintenance Today</a>
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    <p>© 2026 Riverstone Landscaping | Professional Garden Care</p>
+</footer>
+
+
+
+<!-- ================= SCRIPTS ================= -->
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+    const swiper = new Swiper(".gardenSwiper", {
+        loop: true,
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 1.2,
+        spaceBetween: 30,
+
+        autoplay: {
+            delay: 3500,
+            disableOnInteraction: false,
+        },
+
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+
+        breakpoints: {
+            768: { slidesPerView: 2.2 },
+            1024: { slidesPerView: 3 }
+        }
+    });
+
+
+    /* Fade In On Scroll */
+    const faders = document.querySelectorAll('.fade-in');
+
+    const appearOptions = {
+        threshold: 0.2
+    };
+
+    const appearOnScroll = new IntersectionObserver(function(entries, observer){
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) return;
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
         });
-    </script>
+    }, appearOptions);
+
+    faders.forEach(fader => {
+        appearOnScroll.observe(fader);
+    });
+</script>
+
 </body>
 </html>
