@@ -1,6 +1,6 @@
 # Riverstone Landscapes & Finishes
 
-A responsive, lead-focused website for a Nairobi landscaping company. The site presents Riverstone's services and real project photography through a distinctive editorial design, then turns interest into a structured WhatsApp quote request.
+A responsive, lead-focused website for a Nairobi landscaping company. The site presents Riverstone's services and real project photography through a distinctive editorial design, then turns interest into a structured WhatsApp service request.
 
 ## Highlights
 

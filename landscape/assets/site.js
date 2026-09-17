@@ -96,7 +96,7 @@
       if (!quoteForm.reportValidity()) return;
       const data = new FormData(quoteForm);
       const message = [
-        'Hello Riverstone, I would like to request a landscaping quote.',
+        'Hello Riverstone, I would like to request landscaping service for my property.',
         '',
         `Name: ${data.get('name')}`,
         `Phone: ${data.get('phone')}`,
@@ -109,7 +109,7 @@
         `Project details: ${data.get('message')}`
       ].join('\n');
       const status = quoteForm.querySelector('[data-form-status]');
-      status.textContent = 'Your quote request is ready. Opening WhatsApp…';
+      status.textContent = 'Your service request is ready. Opening WhatsApp…';
       status.classList.add('is-visible');
       window.open(`https://wa.me/254725429407?text=${encodeURIComponent(message)}`, '_blank', 'noopener,noreferrer');
     });

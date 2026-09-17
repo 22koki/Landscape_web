@@ -47,14 +47,9 @@ button, input, textarea, select { font: inherit; }
 .site-header { position: fixed; inset: 0 0 auto; z-index: 100; color: white; transition: background .3s, box-shadow .3s, color .3s; }
 .site-header.is-scrolled, .site-header.solid { color: var(--ink); background: rgba(251,250,245,.96); box-shadow: 0 8px 35px rgba(20,35,28,.08); backdrop-filter: blur(16px); }
 .nav-wrap { min-height: 6rem; display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
-.brand { display: inline-flex; align-items: center; gap: .85rem; min-width: max-content; }
-.brand-mark { position: relative; width: 2.75rem; height: 2.75rem; border: 1px solid currentColor; border-radius: 50%; display: inline-block; }
-.brand-mark span { position: absolute; width: .78rem; height: 1.45rem; border-radius: 100% 0 100% 0; background: var(--sun); transform-origin: 100% 100%; bottom: .66rem; right: 1.3rem; }
-.brand-mark span:nth-child(2) { transform: rotate(58deg); }
-.brand-mark span:nth-child(3) { transform: rotate(-58deg); }
-.brand-copy { display: grid; line-height: 1.05; }
-.brand-copy strong { font-family: "Manrope", sans-serif; text-transform: uppercase; letter-spacing: .07em; font-size: 1.05rem; }
-.brand-copy small { margin-top: .32rem; text-transform: uppercase; letter-spacing: .13em; font-size: .55rem; opacity: .76; }
+.brand { display: inline-flex; align-items: center; min-width: max-content; padding: .32rem .58rem; border-radius: .8rem; background: rgba(255,255,255,.96); box-shadow: 0 8px 28px rgba(13,44,32,.12); }
+.brand-logo { width: clamp(9.7rem, 16vw, 12.4rem); height: auto; aspect-ratio: 1017 / 399; object-fit: contain; }
+.site-footer .brand { box-shadow: none; }
 .site-nav { display: flex; align-items: center; gap: clamp(1.1rem, 2.5vw, 2.3rem); font-size: .9rem; font-weight: 600; }
 .site-nav > a:not(.nav-cta) { position: relative; padding: 1rem 0; }
 .site-nav > a:not(.nav-cta)::after { content: ""; position: absolute; left: 0; right: 100%; bottom: .65rem; height: 1px; background: currentColor; transition: right .25s; }
@@ -163,9 +158,9 @@ button, input, textarea, select { font: inherit; }
 /* Inner pages */
 .page-hero { min-height: 34rem; padding: 11rem 0 5rem; display: flex; align-items: flex-end; background: var(--forest); color: white; position: relative; overflow: hidden; }
 .page-hero.has-image::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(6,34,22,.9), rgba(6,34,22,.3)), var(--page-image) center/cover; }
-.page-hero-gallery { --page-image: url("../gallerys/image119.jpg"); }
-.page-hero-services { --page-image: url("../gallerys/image148.jpg"); }
-.page-hero-contact { --page-image: url("../gallerys/image145.jpg"); }
+.page-hero-gallery { --page-image: url("images/tropical-garden.webp"); }
+.page-hero-services { --page-image: url("images/garden-development.webp"); }
+.page-hero-contact { --page-image: url("images/driveway-garden.webp"); }
 .page-hero-inner { position: relative; z-index: 1; }
 .page-hero h1 { max-width: 900px; margin: 0; font: 600 clamp(3.6rem, 8vw, 7.5rem)/.9 "Manrope", sans-serif; letter-spacing: -.075em; }
 .page-hero h1 em { color: var(--sun); font-style: italic; font-weight: 400; }
@@ -247,7 +242,7 @@ button, input, textarea, select { font: inherit; }
 }
 @media (max-width: 640px) {
   .section { padding: 4.5rem 0; }
-  .nav-wrap { min-height: 5.1rem; }.brand-mark { width: 2.35rem; height: 2.35rem; }.brand-mark span { transform: scale(.85); bottom: .45rem; right: 1.08rem; }.brand-mark span:nth-child(2) { transform: rotate(58deg) scale(.85); }.brand-mark span:nth-child(3) { transform: rotate(-58deg) scale(.85); }
+  .nav-wrap { min-height: 5.1rem; }.brand { padding: .25rem .45rem; }.brand-logo { width: 9rem; }
   .hero { min-height: 49rem; }.hero-shade { background: linear-gradient(90deg, rgba(5,30,20,.87), rgba(7,36,24,.4)), linear-gradient(0deg, rgba(5,24,17,.62), transparent 55%); }.hero h1 { font-size: clamp(3.65rem, 17vw, 5.1rem); }.hero-actions { align-items: flex-start; flex-direction: column; gap: 1.2rem; }.hero-foot p { display: none; }
   .section-head { display: block; }.section-head > p, .section-head > a { margin-top: 1.5rem; }
   .service-grid { grid-template-columns: 1fr; grid-auto-rows: 380px; }.service-card-wide { grid-column: auto; }
