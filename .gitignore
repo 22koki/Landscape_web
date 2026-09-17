@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Local tooling and operating-system files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local servers and build output
+.vercel/
+.netlify/
+dist/
+
+# Environment and logs
+.env
+.env.*
+!.env.example
+*.log
+
+# Local archives
+*.zip
