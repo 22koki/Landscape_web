@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#173c2b">
+  <title>Image Manager | Riverstone Landscapes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/admin.css">
+  <script defer src="assets/image-config.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.117.2/dist/umd/supabase.min.js"></script>
+  <script defer src="assets/admin.js"></script>
+</head>
+<body>
+  <header class="manager-header">
+    <a href="index.html" aria-label="Return to Riverstone website"><img src="assets/riverstone-logo.png" alt="The Riverstones Landscapes &amp; Finishes"></a>
+    <a class="view-site" href="index.html">View website <span aria-hidden="true">↗</span></a>
+  </header>
+  <main>
+    <section class="login-panel" data-login-panel>
+      <p class="eyebrow">Private owner access</p>
+      <h1>Manage website images</h1>
+      <p>Replace website photographs without changing any wording, services, contact details, colours or layout.</p>
+      <form data-login-form>
+        <label>Email<input name="email" type="email" autocomplete="username" value="theriverstonefinishes@gmail.com" readonly required></label>
+        <label>Password<input name="password" type="password" autocomplete="current-password" minlength="8" required placeholder="Enter your password"></label>
+        <p class="form-message" data-login-message role="status"></p>
+        <button class="primary-button" type="submit">Sign in</button>
+        <button class="text-button" type="button" data-create-login>Set up the owner login for the first time</button>
+      </form>
+      <p class="security-note">Only the authorized Riverstone email can change images.</p>
+    </section>
+
+    <section class="dashboard" data-dashboard hidden>
+      <div class="dashboard-intro">
+        <div><p class="eyebrow">Image manager</p><h1>Website photographs</h1><p>Select a clear JPG, PNG, WebP or AVIF image. For the best result, use images at least 1600 pixels wide.</p></div>
+        <button class="text-button" type="button" data-sign-out>Sign out</button>
+      </div>
+      <div class="global-message" data-global-message role="status"></div>
+      <div data-image-groups></div>
+    </section>
+  </main>
+</body>
+</html>

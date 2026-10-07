@@ -4,6 +4,31 @@
   const menu = document.querySelector('[data-menu]');
   const menuButton = document.querySelector('[data-menu-button]');
 
+  const loadImageOverrides = async () => {
+    const config = window.RIVERSTONE_IMAGE_MANAGER;
+    if (!config) return;
+    try {
+      const response = await fetch(`${config.supabaseUrl}/rest/v1/site_image_overrides?select=slot,image_url`, {
+        headers: { apikey: config.supabaseKey, Authorization: `Bearer ${config.supabaseKey}` }
+      });
+      if (!response.ok) throw new Error('Image overrides unavailable');
+      const overrides = await response.json();
+      overrides.forEach(({ slot, image_url: imageUrl }) => {
+        document.querySelectorAll(`[data-image-slot="${slot}"]`).forEach((image) => {
+          image.src = imageUrl;
+          const galleryItem = image.closest('[data-gallery-item]');
+          if (galleryItem) galleryItem.dataset.full = imageUrl;
+        });
+        document.querySelectorAll(`[data-image-bg-slot="${slot}"]`).forEach((element) => {
+          element.style.setProperty('--page-image', `url("${imageUrl.replace(/"/g, '%22')}")`);
+        });
+      });
+    } catch (error) {
+      console.warn('Riverstone image updates could not be loaded. Original images remain in place.', error);
+    }
+  };
+  loadImageOverrides();
+
   const syncHeader = () => {
     if (header) header.classList.toggle('is-scrolled', window.scrollY > 24);
   };

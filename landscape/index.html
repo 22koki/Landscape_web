@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/site.css">
+  <script defer src="assets/image-config.js"></script>
   <script defer src="assets/site.js"></script>
 </head>
 <body>
@@ -30,7 +31,7 @@
   </header>
   <main id="main">
     <section class="hero">
-      <div class="hero-media" aria-hidden="true"><img src="assets/images/garden-development.webp" alt="" fetchpriority="high"></div><div class="hero-shade"></div>
+      <div class="hero-media" aria-hidden="true"><img data-image-slot="home-hero" src="assets/images/garden-development.webp" alt="" fetchpriority="high"></div><div class="hero-shade"></div>
       <div class="shell hero-inner">
         <div class="eyebrow light reveal"><span></span> Nairobi · Kenya</div>
         <h1 class="reveal">Outdoor spaces<br>with <em>soul.</em></h1>
@@ -51,12 +52,12 @@
       <div class="shell">
         <div class="section-head reveal"><div><p class="kicker">What we shape</p><h2 class="display">Complete outdoor<br><em>transformation.</em></h2></div><p>Every service can stand alone or become part of one seamless, end-to-end landscape project.</p></div>
         <div class="service-grid">
-          <article class="service-card service-card-large reveal"><img src="assets/images/garden-development.webp" alt="Brightly planted landscaped garden" loading="lazy"><div class="service-overlay"></div><div class="service-number">01</div><div class="service-copy"><p>Design &amp; build</p><h3>Landscape<br>development</h3><span>Site planning · planting · installation</span></div></article>
-          <article class="service-card reveal"><img src="assets/images/hardscape-path.webp" alt="Modern stone paving and hardscape" loading="lazy"><div class="service-overlay"></div><div class="service-number">02</div><div class="service-copy"><p>Structure</p><h3>Hardscaping<br>&amp; paving</h3><span>Paths · patios · retaining walls</span></div></article>
-          <article class="service-card reveal"><img src="assets/images/lawn-care.webp" alt="Freshly maintained green lawn" loading="lazy"><div class="service-overlay"></div><div class="service-number">03</div><div class="service-copy"><p>Ongoing care</p><h3>Garden<br>maintenance</h3><span>Lawn care · pruning · seasonal care</span></div></article>
-          <article class="service-card reveal"><img src="assets/images/water-feature.webp" alt="Natural water feature in a lush garden" loading="lazy"><div class="service-overlay"></div><div class="service-number">04</div><div class="service-copy"><p>Water</p><h3>Pools &amp;<br>water features</h3><span>Swimming pools · ponds · fountains</span></div></article>
-          <article class="service-card reveal"><img src="assets/images/living-wall.webp" alt="Contemporary planted wall finish" loading="lazy"><div class="service-overlay"></div><div class="service-number">05</div><div class="service-copy"><p>Finishes</p><h3>Wall cladding<br>&amp; fencing</h3><span>Natural stone · screens · boundaries</span></div></article>
-          <article class="service-card service-card-wide reveal"><img src="assets/images/outdoor-pavilion.webp" alt="Garden pavilion and outdoor seating area" loading="lazy"><div class="service-overlay"></div><div class="service-number">06</div><div class="service-copy"><p>Living outdoors</p><h3>Terraces, lighting<br>&amp; outdoor rooms</h3><span>Balconies · pergolas · garden lighting</span></div></article>
+          <article class="service-card service-card-large reveal"><img data-image-slot="home-service-1" src="assets/images/garden-development.webp" alt="Brightly planted landscaped garden" loading="lazy"><div class="service-overlay"></div><div class="service-number">01</div><div class="service-copy"><p>Design &amp; build</p><h3>Landscape<br>development</h3><span>Site planning · planting · installation</span></div></article>
+          <article class="service-card reveal"><img data-image-slot="home-service-2" src="assets/images/hardscape-path.webp" alt="Modern stone paving and hardscape" loading="lazy"><div class="service-overlay"></div><div class="service-number">02</div><div class="service-copy"><p>Structure</p><h3>Hardscaping<br>&amp; paving</h3><span>Paths · patios · retaining walls</span></div></article>
+          <article class="service-card reveal"><img data-image-slot="home-service-3" src="assets/images/lawn-care.webp" alt="Freshly maintained green lawn" loading="lazy"><div class="service-overlay"></div><div class="service-number">03</div><div class="service-copy"><p>Ongoing care</p><h3>Garden<br>maintenance</h3><span>Lawn care · pruning · seasonal care</span></div></article>
+          <article class="service-card reveal"><img data-image-slot="home-service-4" src="assets/images/water-feature.webp" alt="Natural water feature in a lush garden" loading="lazy"><div class="service-overlay"></div><div class="service-number">04</div><div class="service-copy"><p>Water</p><h3>Pools &amp;<br>water features</h3><span>Swimming pools · ponds · fountains</span></div></article>
+          <article class="service-card reveal"><img data-image-slot="home-service-5" src="assets/images/living-wall.webp" alt="Contemporary planted wall finish" loading="lazy"><div class="service-overlay"></div><div class="service-number">05</div><div class="service-copy"><p>Finishes</p><h3>Wall cladding<br>&amp; fencing</h3><span>Natural stone · screens · boundaries</span></div></article>
+          <article class="service-card service-card-wide reveal"><img data-image-slot="home-service-6" src="assets/images/outdoor-pavilion.webp" alt="Garden pavilion and outdoor seating area" loading="lazy"><div class="service-overlay"></div><div class="service-number">06</div><div class="service-copy"><p>Living outdoors</p><h3>Terraces, lighting<br>&amp; outdoor rooms</h3><span>Balconies · pergolas · garden lighting</span></div></article>
         </div>
         <div class="center-action reveal"><a class="button button-outline" href="services.html">View every service <span>→</span></a></div>
       </div>
@@ -71,15 +72,15 @@
       <div class="shell">
         <div class="section-head reveal"><div><p class="kicker">Selected work</p><h2 class="display">Landscapes with a<br><em>point of view.</em></h2></div><a class="text-link" href="gallery.html">See the full gallery <span>→</span></a></div>
         <div class="project-mosaic">
-          <a class="project project-a reveal" href="gallery.html"><img src="assets/images/water-feature.webp" alt="Natural garden waterfall and rocks" loading="lazy"><span><small>Water &amp; stone</small>Natural retreat <b>↗</b></span></a>
-          <a class="project project-b reveal" href="gallery.html"><img src="assets/images/garden-development.webp" alt="Green lawn with lush border planting" loading="lazy"><span><small>Garden development</small>Emerald courtyard <b>↗</b></span></a>
-          <a class="project project-c reveal" href="gallery.html"><img src="assets/images/outdoor-pavilion.webp" alt="Landscaped garden and outdoor pavilion" loading="lazy"><span><small>Outdoor living</small>Garden pavilion <b>↗</b></span></a>
-          <a class="project project-d reveal" href="gallery.html"><img src="assets/images/stepping-stones.webp" alt="Geometric stepping stones with planting" loading="lazy"><span><small>Hardscape</small>Green geometry <b>↗</b></span></a>
+          <a class="project project-a reveal" href="gallery.html"><img data-image-slot="home-project-1" src="assets/images/water-feature.webp" alt="Natural garden waterfall and rocks" loading="lazy"><span><small>Water &amp; stone</small>Natural retreat <b>↗</b></span></a>
+          <a class="project project-b reveal" href="gallery.html"><img data-image-slot="home-project-2" src="assets/images/garden-development.webp" alt="Green lawn with lush border planting" loading="lazy"><span><small>Garden development</small>Emerald courtyard <b>↗</b></span></a>
+          <a class="project project-c reveal" href="gallery.html"><img data-image-slot="home-project-3" src="assets/images/outdoor-pavilion.webp" alt="Landscaped garden and outdoor pavilion" loading="lazy"><span><small>Outdoor living</small>Garden pavilion <b>↗</b></span></a>
+          <a class="project project-d reveal" href="gallery.html"><img data-image-slot="home-project-4" src="assets/images/stepping-stones.webp" alt="Geometric stepping stones with planting" loading="lazy"><span><small>Hardscape</small>Green geometry <b>↗</b></span></a>
         </div>
       </div>
     </section>
     <section class="promise section">
-      <div class="shell promise-grid"><div class="promise-image reveal"><img src="assets/images/curved-path.webp" alt="A landscaped garden path and lawn" loading="lazy"><div class="promise-badge">Designed<br>to thrive</div></div><div class="promise-copy reveal"><p class="kicker">The Riverstone difference</p><h2 class="display">Beautiful on day one.<br><em>Better with time.</em></h2><p>We choose plants and materials for the site, not just the photograph. The result is an outdoor space with strong bones, healthy growth and a finish that lasts.</p><ul class="check-list"><li><span>✓</span> Climate-conscious plant selection</li><li><span>✓</span> One accountable project team</li><li><span>✓</span> Clear, practical project planning</li><li><span>✓</span> Aftercare and maintenance options</li></ul><a class="text-link" href="contact.html">Tell us about your space <span>→</span></a></div></div>
+      <div class="shell promise-grid"><div class="promise-image reveal"><img data-image-slot="home-promise" src="assets/images/curved-path.webp" alt="A landscaped garden path and lawn" loading="lazy"><div class="promise-badge">Designed<br>to thrive</div></div><div class="promise-copy reveal"><p class="kicker">The Riverstone difference</p><h2 class="display">Beautiful on day one.<br><em>Better with time.</em></h2><p>We choose plants and materials for the site, not just the photograph. The result is an outdoor space with strong bones, healthy growth and a finish that lasts.</p><ul class="check-list"><li><span>✓</span> Climate-conscious plant selection</li><li><span>✓</span> One accountable project team</li><li><span>✓</span> Clear, practical project planning</li><li><span>✓</span> Aftercare and maintenance options</li></ul><a class="text-link" href="contact.html">Tell us about your space <span>→</span></a></div></div>
     </section>
     <section class="quote-band"><div class="shell quote-band-inner reveal"><p class="kicker light">Ready when you are</p><h2>Your outdoor space could<br>be the best room you own.</h2><div><p>Share a few details and arrange a conversation with our team.</p><a class="button button-sun" href="contact.html">Request service <span>↗</span></a></div></div></section>
   </main>
