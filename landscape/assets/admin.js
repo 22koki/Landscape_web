@@ -6,6 +6,7 @@
   const client = sdk.createClient(config.supabaseUrl, config.supabaseKey, {
     auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: true }
   });
+  document.documentElement.dataset.managerReady = 'true';
   const loginPanel = document.querySelector('[data-login-panel]');
   const dashboard = document.querySelector('[data-dashboard]');
   const loginForm = document.querySelector('[data-login-form]');

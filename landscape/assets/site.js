@@ -23,6 +23,7 @@
           element.style.setProperty('--page-image', `url("${imageUrl.replace(/"/g, '%22')}")`);
         });
       });
+      document.documentElement.dataset.imageManagerReady = 'true';
     } catch (error) {
       console.warn('Riverstone image updates could not be loaded. Original images remain in place.', error);
     }
